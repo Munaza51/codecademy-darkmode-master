@@ -1,0 +1,31 @@
+ul[role='menubar'] > div,
+li[aria-labelledby='Profile menu'],
+li[aria-labelledby='Catalog menu'],
+li[aria-labelledby='Community menu'],
+li[aria-labelledby='Resources menu'] {
+  background-color: var(--color-background-dark) !important;
+}
+
+/* Notifications badge (# of notifications) */
+ul[role='menubar'] > li + li > span + div + div {
+  background-color: var(--color-palePink) !important;
+}
+
+nav[aria-label='Main Navigation'],
+nav[aria-label='Mobile Navigation'] {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+a[data-testid='header-sign-up'] {
+  color: var(--color-text-dark) !important;
+}
+
+a[data-testid='header-sign-up']:hover {
+  color: var(--color-text-dark) !important;
+  filter: brightness(1.2);
+}
+
+a[aria-label='Codecademy Home'] > svg {
+  color: var(--color-text-light) !important;
+}

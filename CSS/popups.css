@@ -1,0 +1,78 @@
+/* Weekly progress popup */
+
+div[class*='ToastContainer'] {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[class*='ToastContainer'] * {
+  color: var(--color-text-light) !important;
+}
+
+/* weekly target letters that represent the days */
+div#target-week > div > div > div + div {
+  color: var(--color-text-light) !important;
+}
+
+/* check marks, overrides the above */
+mask[id*='SmallCheckIcon'] + g > rect {
+  color: var(--color-text-light) !important;
+}
+
+div[role='dialog'] {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[role='dialog'] div:has(> li) {
+  background-color: var(--color-background-dark) !important;
+}
+
+span[role='tooltip'] + div > div + div > div {
+  color: var(--color-text-dark) !important;
+  background-color: var(--color-background-light) !important;
+}
+
+span[role='tooltip'] + div > div + div > div::after {
+  background-image: none !important;
+  background-color: var(--color-background-light) !important;
+  border-color: var(--color-text-highlight) !important;
+}
+
+div[class*='PopoverContainer'] button:hover {
+  color: var(--color-text-highlight) !important;
+}
+
+/* Popup for "It looks like you haven't started this lesson yet" */
+
+h2[aria-live='assertive']
+  + div
+  + div[data-testid='modal-content']
+  > div
+  > span
+  + div
+  > button
+  > span {
+  color: var(--color-text-light) !important;
+}
+
+h2[aria-live='assertive']
+  + div
+  + div[data-testid='modal-content']
+  > div
+  > span
+  + div
+  > button
+  + button {
+  color: var(--color-text-dark) !important;
+}
+
+h2[aria-live='assertive']
+  + div
+  + div[data-testid='modal-content']
+  > div
+  > span
+  + div
+  > button
+  + button:hover {
+  color: var(--color-text-dark) !important;
+  filter: brightness(1.2);
+}
