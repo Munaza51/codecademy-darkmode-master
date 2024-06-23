@@ -2,7 +2,6 @@
 
 <h2>An unofficial skin for the Codecademy learning platform</h2>
 
-![Codecademy Dark](https://github.com/Jamesllllllllll/codecademy-darkmode/assets/125431058/5034f8b7-7e56-49ba-88ce-3314944f3b67)
 
 ## What is this?
 
